@@ -56,8 +56,8 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_house_ads_image'
-  $field_instances['fieldable_panels_pane-house_ads-field_house_ads_image'] = array(
+  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_image_single_public'
+  $field_instances['fieldable_panels_pane-house_ads-field_image_single_public'] = array(
     'bundle' => 'house_ads',
     'deleted' => 0,
     'description' => '',
@@ -76,7 +76,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'fieldable_panels_pane',
-    'field_name' => 'field_house_ads_image',
+    'field_name' => 'field_image_single_public',
     'label' => 'Image',
     'required' => 1,
     'settings' => array(
@@ -117,7 +117,6 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
           'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 0,
-          'youtube' => 0,
         ),
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'progress_indicator' => 'throbber',
@@ -128,8 +127,9 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_style'
-  $field_instances['fieldable_panels_pane-house_ads-field_style'] = array(
+
+  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_house_ads_style'
+  $field_instances['fieldable_panels_pane-house_ads-field_house_ads_style'] = array(
     'bundle' => 'house_ads',
     'default_value' => NULL,
     'deleted' => 0,
@@ -144,7 +144,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'fieldable_panels_pane',
-    'field_name' => 'field_style',
+    'field_name' => 'field_house_ads_style',
     'label' => 'Style',
     'required' => 1,
     'settings' => array(
@@ -162,8 +162,8 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_title_link'
-  $field_instances['fieldable_panels_pane-house_ads-field_title_link'] = array(
+  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_link_single'
+  $field_instances['fieldable_panels_pane-house_ads-field_link_single'] = array(
     'bundle' => 'house_ads',
     'default_value' => NULL,
     'deleted' => 0,
@@ -181,8 +181,8 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'fieldable_panels_pane',
-    'field_name' => 'field_title_link',
-    'label' => 'Title Link',
+    'field_name' => 'field_link_single',
+    'label' => 'Title and Link',
     'required' => 1,
     'settings' => array(
       'attributes' => array(
