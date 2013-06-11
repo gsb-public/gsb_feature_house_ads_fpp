@@ -10,7 +10,7 @@ include_once 'gsb_feature_house_ads.features.inc';
 /**
  * Implements hook_entity_alter().
  */
-function gsb_feature_house_ads_entity_info_alter(&$entity_info) {
+function gsb_feature_house_ads_fpp_entity_info_alter(&$entity_info) {
   $entity_info['fieldable_panels_pane']['bundles']['house_ads'] = array(
     'label' => t('House Ads'),
     'pane category' => t('Content Panes'),
@@ -27,7 +27,7 @@ function gsb_feature_house_ads_entity_info_alter(&$entity_info) {
 /**
  * Implements hook_preprocess_panels_pane
  */
-function gsb_feature_house_ads_preprocess_panels_pane(&$vars) {
+function gsb_feature_house_ads_fpp_preprocess_panels_pane(&$vars) {
   if ($vars['pane']->type == 'fieldable_panels_pane' && $vars['content']['#bundle'] == 'house_ads') {
     $wrapper = entity_metadata_wrapper('fieldable_panels_pane', $vars['content']['#fieldable_panels_pane']);
     $style = $wrapper->field_style->value();

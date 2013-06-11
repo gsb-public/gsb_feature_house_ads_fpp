@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * gsb_feature_house_ads.features.field_base.inc
+ * gsb_feature_house_ads_fpp.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function gsb_feature_house_ads_field_default_field_bases() {
+function gsb_feature_house_ads_fpp_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_house_ads_image'

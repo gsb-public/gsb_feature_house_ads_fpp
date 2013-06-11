@@ -1,8 +1,8 @@
 name = GSB Feature House Ads
 core = 7.x
-package = Features
+package = GSB
 version = 7.x-1.0
-project = gsb_feature_house_ads
+project = gsb_feature_house_ads_fpp
 dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = features

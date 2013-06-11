@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * gsb_feature_house_ads.features.field_instance.inc
+ * gsb_feature_house_ads_fpp.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function gsb_feature_house_ads_field_default_field_instances() {
+function gsb_feature_house_ads_fpp_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'fieldable_panels_pane-house_ads-field_body'

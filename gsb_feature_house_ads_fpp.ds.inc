@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * gsb_feature_house_ads.ds.inc
+ * gsb_feature_house_ads_fpp.ds.inc
  */
 
 /**
  * Implements hook_ds_field_settings_info().
  */
-function gsb_feature_house_ads_ds_field_settings_info() {
+function gsb_feature_house_ads_fpp_ds_field_settings_info() {
   $export = array();
 
   $ds_fieldsetting = new stdClass();
@@ -44,7 +44,7 @@ function gsb_feature_house_ads_ds_field_settings_info() {
 /**
  * Implements hook_ds_layout_settings_info().
  */
-function gsb_feature_house_ads_ds_layout_settings_info() {
+function gsb_feature_house_ads_fpp_ds_layout_settings_info() {
   $export = array();
 
   $ds_layout = new stdClass();
