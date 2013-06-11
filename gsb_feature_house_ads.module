@@ -31,6 +31,6 @@ function gsb_feature_house_ads_preprocess_panels_pane(&$vars) {
   if ($vars['pane']->type == 'fieldable_panels_pane' && $vars['content']['#bundle'] == 'house_ads') {
     $wrapper = entity_metadata_wrapper('fieldable_panels_pane', $vars['content']['#fieldable_panels_pane']);
     $style = $wrapper->field_style->value();
-    $vars['classes_array'][] = 'house-add-style-' . $style;
+    $vars['classes_array'][] = $style;
   }
 }
