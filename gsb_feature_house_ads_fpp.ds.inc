@@ -57,16 +57,14 @@ function gsb_feature_house_ads_fpp_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'group_wrapper',
-        1 => 'field_house_ads_image',
-        2 => 'field_title_link',
-        3 => 'field_body',
+        0 => 'field_image_single_public',
+        1 => 'field_link_single',
+        2 => 'field_body',
       ),
     ),
     'fields' => array(
-      'group_wrapper' => 'ds_content',
-      'field_house_ads_image' => 'ds_content',
-      'field_title_link' => 'ds_content',
+      'field_image_single_public' => 'ds_content',
+      'field_link_single' => 'ds_content',
       'field_body' => 'ds_content',
     ),
     'classes' => array(),
