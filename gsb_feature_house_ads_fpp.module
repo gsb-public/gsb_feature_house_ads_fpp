@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Code for the GSB Feature House Ads feature.
+ * Code for the GSB Feature House Ads FPP feature.
  */
 
-include_once 'gsb_feature_house_ads.features.inc';
+include_once 'gsb_feature_house_ads_fpp.features.inc';
 
 /**
  * Implements hook_entity_alter().
