@@ -35,3 +35,13 @@ function gsb_feature_house_ads_fpp_preprocess_panels_pane(&$vars) {
     $vars['classes_array'][] = $style;
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter
+ */
+function gsb_feature_house_ads_fpp_form_fieldable_panels_panes_fieldable_panels_pane_content_type_edit_form_alter(&$form, &$form_state, $form_id) {
+  if (isset($form['field_house_ads_style'][$form['field_house_ads_style']['#language']]['#options'])) {
+    $options = &$form['field_house_ads_style'][$form['field_house_ads_style']['#language']]['#options'];
+    $options['_none'] = '- Select a style -';
+  }
+}
