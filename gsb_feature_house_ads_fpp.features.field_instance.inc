@@ -24,7 +24,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 2,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -56,6 +56,40 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_house_ads_style'
+  $field_instances['fieldable_panels_pane-house_ads-field_house_ads_style'] = array(
+    'bundle' => 'house_ads',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'fieldable_panels_pane',
+    'field_name' => 'field_house_ads_style',
+    'label' => 'Style',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'options_select',
+      'weight' => -2,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'fieldable_panels_pane-house_ads-field_image_single_public'
   $field_instances['fieldable_panels_pane-house_ads-field_image_single_public'] = array(
     'bundle' => 'house_ads',
@@ -71,7 +105,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
           'image_style' => '270x158',
         ),
         'type' => 'image',
-        'weight' => 3,
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -127,41 +161,6 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-
-  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_house_ads_style'
-  $field_instances['fieldable_panels_pane-house_ads-field_house_ads_style'] = array(
-    'bundle' => 'house_ads',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'fieldable_panels_pane',
-    'field_name' => 'field_house_ads_style',
-    'label' => 'Style',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'options_select',
-      'weight' => -2,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'fieldable_panels_pane-house_ads-field_link_single'
   $field_instances['fieldable_panels_pane-house_ads-field_link_single'] = array(
     'bundle' => 'house_ads',
@@ -176,7 +175,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 4,
+        'weight' => 1,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -225,7 +224,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
   t('Description');
   t('Image');
   t('Style');
-  t('Title Link');
+  t('Title and Link');
 
   return $field_instances;
 }
