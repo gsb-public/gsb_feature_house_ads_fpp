@@ -94,7 +94,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
   $field_instances['fieldable_panels_pane-house_ads-field_image_single_public'] = array(
     'bundle' => 'house_ads',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Recommended image size 566 x 396',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -223,6 +223,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Description');
   t('Image');
+  t('Recommended image size 566 x 396');
   t('Style');
   t('Title and Link');
 
