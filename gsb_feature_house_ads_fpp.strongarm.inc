@@ -44,7 +44,7 @@ function gsb_feature_house_ads_fpp_strongarm() {
       'display' => array(
         'title' => array(
           'default' => array(
-            'weight' => '3',
+            'weight' => '4',
             'visible' => FALSE,
           ),
         ),
