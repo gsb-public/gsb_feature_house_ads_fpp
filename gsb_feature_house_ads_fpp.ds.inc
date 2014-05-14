@@ -53,27 +53,32 @@ function gsb_feature_house_ads_fpp_ds_layout_settings_info() {
   $ds_layout->entity_type = 'fieldable_panels_pane';
   $ds_layout->bundle = 'house_ads';
   $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
+      'left' => array(
         0 => 'field_image_single_public',
+      ),
+      'right' => array(
         1 => 'field_link_single',
         2 => 'field_body',
       ),
     ),
     'fields' => array(
-      'field_image_single_public' => 'ds_content',
-      'field_link_single' => 'ds_content',
-      'field_body' => 'ds_content',
+      'field_image_single_public' => 'left',
+      'field_link_single' => 'right',
+      'field_body' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'left' => 'div',
+      'right' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['fieldable_panels_pane|house_ads|default'] = $ds_layout;
 

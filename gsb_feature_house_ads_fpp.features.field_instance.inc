@@ -43,6 +43,8 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'label' => 'Description',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -86,6 +88,8 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'label' => 'Style',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -135,6 +139,8 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'alt_field' => 0,
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_image' => 0,
       'file_directory' => 'house',
       'file_extensions' => 'png gif jpg jpeg',
@@ -221,6 +227,8 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
         'target' => 'user',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -231,6 +239,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
       ),
       'rel_remove' => 'default',
       'title' => 'required',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 60,
       'title_value' => '',
       'url' => 0,
