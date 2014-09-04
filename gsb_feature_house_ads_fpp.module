@@ -25,23 +25,3 @@ function gsb_feature_house_ads_fpp_entity_info_alter(&$entity_info) {
   );
 }
 
-/**
- * Implements hook_preprocess_panels_pane
- */
-function gsb_feature_house_ads_fpp_preprocess_panels_pane(&$vars) {
-  if ($vars['pane']->type == 'fieldable_panels_pane' && $vars['content']['#bundle'] == 'house_ads') {
-    $wrapper = entity_metadata_wrapper('fieldable_panels_pane', $vars['content']['#fieldable_panels_pane']);
-    $style = $wrapper->field_house_ads_style->value();
-    $vars['classes_array'][] = $style;
-  }
-}
-
-/**
- * Implements hook_form_FORM_ID_alter
- */
-function gsb_feature_house_ads_fpp_form_fieldable_panels_panes_fieldable_panels_pane_content_type_edit_form_alter(&$form, &$form_state, $form_id) {
-  if (!empty($form['field_house_ads_style']) && isset($form['field_house_ads_style'][$form['field_house_ads_style']['#language']]['#options'])) {    
-    $options = &$form['field_house_ads_style'][$form['field_house_ads_style']['#language']]['#options'];
-    $options['_none'] = '- Select a style -';
-  }
-}
