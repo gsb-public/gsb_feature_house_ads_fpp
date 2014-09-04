@@ -38,7 +38,7 @@ function gsb_feature_house_ads_fpp_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-6',
+          'weight' => '1',
         ),
       ),
       'display' => array(
