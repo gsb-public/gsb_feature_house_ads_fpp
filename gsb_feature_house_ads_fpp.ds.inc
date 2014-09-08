@@ -35,6 +35,45 @@ function gsb_feature_house_ads_fpp_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_single' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_house_ads_superhead' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
   );
   $export['fieldable_panels_pane|house_ads|default'] = $ds_fieldsetting;
 
@@ -57,14 +96,16 @@ function gsb_feature_house_ads_fpp_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'field_image_single_public',
+        0 => 'field_house_ads_superhead',
+        1 => 'field_image_single_public',
       ),
       'right' => array(
-        1 => 'field_link_single',
-        2 => 'field_body',
+        2 => 'field_link_single',
+        3 => 'field_body',
       ),
     ),
     'fields' => array(
+      'field_house_ads_superhead' => 'left',
       'field_image_single_public' => 'left',
       'field_link_single' => 'right',
       'field_body' => 'right',
