@@ -12,7 +12,7 @@ include_once 'gsb_feature_house_ads_fpp.features.inc';
  */
 function gsb_feature_house_ads_fpp_entity_info_alter(&$entity_info) {
   $entity_info['fieldable_panels_pane']['bundles']['house_ads'] = array(
-    'label' => t('House Ads'),
+    'label' => t('House Ad'),
     'pane category' => t('GSB panes'),
     'pane top level' => TRUE, // set to true to make this show as a top level icon
     'admin' => array(
