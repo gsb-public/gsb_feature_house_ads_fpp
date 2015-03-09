@@ -143,8 +143,10 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
   // Exported field_instance: 'fieldable_panels_pane-house_ads-field_image_single_public'
   $field_instances['fieldable_panels_pane-house_ads-field_image_single_public'] = array(
     'bundle' => 'house_ads',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'deleted' => 0,
-    'description' => 'Recommended image size 566 x 396',
+    'description' => '540 x 316 px',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -170,6 +172,26 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
       'default_image' => 0,
       'file_directory' => 'house',
       'file_extensions' => 'png gif jpg jpeg',
+      'filefield_paths' => array(
+        'active_updating' => 0,
+        'file_name' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
+        ),
+        'file_path' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '',
+        ),
+        'replace_existing_files' => 0,
+        'retroactive_update' => 0,
+      ),
+      'filefield_paths_enabled' => 1,
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
@@ -180,31 +202,6 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'allowed_schemes' => array(
-          'private' => 'private',
-          'public' => 'public',
-          'vimeo' => 0,
-          'youtube' => 0,
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'gsb_media_browser--files_and_docs' => 0,
-          'gsb_media_browser--images' => 0,
-          'gsb_media_browser--videos' => 0,
-          'gsb_media_center_document' => 0,
-          'gsb_media_center_image' => 'gsb_media_center_image',
-          'gsb_media_center_video' => 0,
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 0,
-        ),
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -237,6 +234,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'label' => 'Title and Link',
     'required' => 1,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -277,9 +275,9 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('540 x 316 px');
   t('Description');
   t('Image');
-  t('Recommended image size 566 x 396');
   t('Superhead');
   t('Title and Link');
 
