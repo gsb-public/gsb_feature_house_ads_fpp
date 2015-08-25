@@ -96,17 +96,17 @@ function gsb_feature_house_ads_fpp_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'field_house_ads_superhead',
-        1 => 'field_image_single_public',
+        0 => 'field_image_single_public',
       ),
       'right' => array(
+        1 => 'field_house_ads_superhead',
         2 => 'field_link_single',
         3 => 'field_body',
       ),
     ),
     'fields' => array(
-      'field_house_ads_superhead' => 'left',
       'field_image_single_public' => 'left',
+      'field_house_ads_superhead' => 'right',
       'field_link_single' => 'right',
       'field_body' => 'right',
     ),
@@ -120,6 +120,7 @@ function gsb_feature_house_ads_fpp_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['fieldable_panels_pane|house_ads|default'] = $ds_layout;
 

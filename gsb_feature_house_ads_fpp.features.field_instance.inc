@@ -58,7 +58,8 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_house_ads_superhead'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-house_ads-field_house_ads_superhead'
   $field_instances['fieldable_panels_pane-house_ads-field_house_ads_superhead'] = array(
     'bundle' => 'house_ads',
     'custom_add_another' => '',
@@ -74,7 +75,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -140,7 +141,8 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_image_single_public'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-house_ads-field_image_single_public'
   $field_instances['fieldable_panels_pane-house_ads-field_image_single_public'] = array(
     'bundle' => 'house_ads',
     'custom_add_another' => '',
@@ -157,7 +159,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
           'image_style' => '270x158',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -211,7 +213,8 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_link_single'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-house_ads-field_link_single'
   $field_instances['fieldable_panels_pane-house_ads-field_link_single'] = array(
     'bundle' => 'house_ads',
     'default_value' => NULL,
