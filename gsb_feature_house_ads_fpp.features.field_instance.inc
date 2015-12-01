@@ -10,7 +10,7 @@
 function gsb_feature_house_ads_fpp_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_body'
+  // Exported field_instance: 'fieldable_panels_pane-house_ads-field_body'.
   $field_instances['fieldable_panels_pane-house_ads-field_body'] = array(
     'bundle' => 'house_ads',
     'default_value' => NULL,
@@ -59,7 +59,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'fieldable_panels_pane-house_ads-field_house_ads_superhead'
+  // 'fieldable_panels_pane-house_ads-field_house_ads_superhead'.
   $field_instances['fieldable_panels_pane-house_ads-field_house_ads_superhead'] = array(
     'bundle' => 'house_ads',
     'custom_add_another' => '',
@@ -142,7 +142,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'fieldable_panels_pane-house_ads-field_image_single_public'
+  // 'fieldable_panels_pane-house_ads-field_image_single_public'.
   $field_instances['fieldable_panels_pane-house_ads-field_image_single_public'] = array(
     'bundle' => 'house_ads',
     'custom_add_another' => '',
@@ -152,13 +152,13 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'image_link_formatter',
         'settings' => array(
           'conditions' => array(),
-          'image_link' => '',
+          'image_link' => 'field_link_single',
           'image_style' => '270x158',
         ),
-        'type' => 'image',
+        'type' => 'image_link_formatter',
         'weight' => 0,
       ),
     ),
@@ -214,7 +214,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'fieldable_panels_pane-house_ads-field_link_single'
+  // 'fieldable_panels_pane-house_ads-field_link_single'.
   $field_instances['fieldable_panels_pane-house_ads-field_link_single'] = array(
     'bundle' => 'house_ads',
     'default_value' => NULL,

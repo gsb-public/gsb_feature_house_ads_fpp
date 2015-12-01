@@ -34,6 +34,9 @@ function gsb_feature_house_ads_fpp_strongarm() {
       'people_fpp' => array(
         'custom_settings' => FALSE,
       ),
+      'preview' => array(
+        'custom_settings' => FALSE,
+      ),
       'compact' => array(
         'custom_settings' => FALSE,
       ),
