@@ -156,7 +156,7 @@ function gsb_feature_house_ads_fpp_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'image_link' => 'field_link_single',
-          'image_style' => '270x158',
+          'image_style' => '310px',
         ),
         'type' => 'image_link_formatter',
         'weight' => 0,
